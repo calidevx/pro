@@ -1,0 +1,136 @@
+*, 
+::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+    /* background-color: #0a0a0a; */
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    background-color: transparent;
+    transition: .4s;
+    padding: .8rem 0;
+}
+.main-nav{
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 1.9rem;
+    color: white;
+    font-weight: 800;
+}
+.logo span{
+    color: #4f20e8;
+}
+.navbar{
+    display: flex;
+}
+.menu-item{
+    padding: 0 5px;
+    transition: .4s;
+}
+/* hover nav-item */
+.menu-item a{
+    transition: .3s;
+}
+.menu-item a:hover{
+    color: #4f20e8;
+}
+.menu-link{
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    font-weight: 300;
+}
+.content{
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: white;
+}
+.content:nth-child(odd){
+    background-color: #141414;
+}
+/* #home,
+#about,
+#skills,
+#contact{
+    padding: 70px 30px;
+} */
+
+/* Sticky Navbar */
+nav.header-sticky{
+    position: fixed;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+    transition: .4s;
+}
+
+/* Hide Navbar */
+@media(max-width: 700px){
+    .navbar{
+        display: none;
+    }
+}
+
+/* home section*/
+#home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 30px 0;
+}
+.home-item h3{
+    font-size: 35px;
+    font-weight: 400;
+}
+.home-item h1{
+    font-size: 70px;
+}
+.home-item h2{
+    font-size: 40px;
+}
+.home-item h2 .auto-typed{
+    color:#4f20e8;
+}
+.home-item .infoHome{
+    font-size: 1.2rem;
+    margin-right: 55%;
+    justify-content: center;
+}
+.iconHome{
+    font-size: 2.6em;
+    padding: 1rem 0;
+}
+.socialicon{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #4f20e8;
+    border-radius: 50%;
+    color: #4f20e8;
+    transition: .5s;
+}
+.socialicon:hover{
+    background-color: #4f20e8;
+    color: #141414;
+    box-shadow: 0 0 10px #4f20e8;
+}
